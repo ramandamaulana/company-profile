@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <!-- Menambahkan fontawesome untuk ikon di footer -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>MyWebsite</title>
+  </head>
+  <body class="bg-[#0E0E0E]">
+    <!-- navbar -->
+    <nav class="bg-[#0E0E0E] text-white">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <img src="../dist/logo.svg" alt="Logo" />
+
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Services</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <button
+            class="border-solid border-2 border-white rounded-full hover:text-gray-300 py-2 px-4"
+          >
+            Contact Us
+          </button>
+        </div>
+
+        <!-- Dark/Light Mode Toggle -->
+        <button id="themeToggle" class="text-white">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden flex items-center" id="menuButton">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden mobile-menu bg-[#0E0E0E] md:hidden">
+        <a href="#" class="block text-white hover:text-gray-300 py-2 px-4"
+          >Home</a
+        >
+        <a href="#" class="block text-white hover:text-gray-300 py-2 px-4"
+          >About</a
+        >
+        <a href="#" class="block text-white hover:text-gray-300 py-2 px-4"
+          >Services</a
+        >
+        <a href="#" class="block text-white hover:text-gray-300 py-2 px-4"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <!-- Section Hero -->
+      <section class="bg-[#0E0E0E]">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center py-20 px-4 md:px-8"
+        >
+          <!-- Kiri: Konten -->
+          <div class="flex-1 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+              Selamat Datang <span class="text-white"> MyWebsite</span>
+            </h1>
+            <p class="mt-4 text-white font-light text-lg">
+              Bangun website impianmu dengan teknologi modern dan performa
+              tinggi.
+            </p>
+            <div class="mt-6 flex justify-center md:justify-start space-x-4">
+              <a
+                href="#learn-more"
+                class="bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-600"
+              >
+                Pelajari Lebih Lanjut
+              </a>
+              <a
+                href="#get-started"
+                class="bg-gray-300 text-gray-800 px-6 py-3 rounded shadow hover:bg-gray-400"
+              >
+                Mulai Sekarang
+              </a>
+            </div>
+          </div>
+
+          <!-- Kanan: Gambar -->
+          <div class="flex-1 mt-10 md:mt-0">
+            <img
+              src="../dist/banner.svg"
+              alt="Gambar Hero"
+              class="rounded shadow-lg mx-auto md:ml-auto"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Section About -->
+      <section class="bg-[#0E0E0E] py-16">
+        <div class="container mx-auto px-4 md:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Tentang Kami
+            </h2>
+            <p class="mt-4 text-white font-light max-w-2xl mx-auto">
+              Kami adalah tim yang berdedikasi untuk memberikan solusi terbaik
+              dalam dunia teknologi. Dengan pengalaman bertahun-tahun, kami
+              membantu klien mencapai tujuan mereka dengan inovasi modern.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Kiri: Gambar -->
+            <div>
+              <img
+                src="../dist/ourteam.svg"
+                alt="Tentang Kami"
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+
+            <!-- Kanan: Konten -->
+            <div>
+              <h3 class="text-2xl font-semibold text-white">
+                Apa yang Membuat Kami Berbeda?
+              </h3>
+              <p class="mt-4 text-white font-light leading-relaxed">
+                Kami percaya pada pentingnya teknologi yang mudah diakses,
+                fleksibel, dan sesuai kebutuhan klien. Dengan pendekatan yang
+                berfokus pada hasil, kami memastikan bahwa setiap solusi kami
+                memberikan nilai lebih untuk masa depan Anda.
+              </p>
+              <ul class="mt-6 space-y-4">
+                <li class="flex items-start">
+                  <span
+                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-4"
+                    >✓</span
+                  >
+                  <span class="text-white font-light"
+                    >Pengalaman lebih dari 5 tahun di bidang teknologi.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-4"
+                    >✓</span
+                  >
+                  <span class="text-white font-light"
+                    >Tim profesional yang berdedikasi.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-4"
+                    >✓</span
+                  >
+                  <span class="text-white font-light"
+                    >Solusi inovatif untuk kebutuhan bisnis Anda.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Service -->
+      <section class="bg-[#0E0E0E] py-16">
+        <div class="container mx-auto px-4 md:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Layanan Kami
+            </h2>
+            <p class="mt-4 text-white font-light max-w-2xl mx-auto">
+              Kami menyediakan berbagai layanan yang dirancang untuk membantu
+              Anda mencapai tujuan bisnis dan teknologi Anda.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div
+                class="w-16 h-16 bg-blue-100 text-blue-500 mx-auto rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-code text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Pengembangan Website
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Kami membangun website interaktif dan responsif yang sesuai
+                dengan kebutuhan Anda.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div
+                class="w-16 h-16 bg-blue-100 text-blue-500 mx-auto rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-mobile-alt text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Aplikasi Mobile
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Kami mengembangkan aplikasi mobile dengan fitur modern dan
+                performa tinggi.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div
+                class="w-16 h-16 bg-blue-100 text-blue-500 mx-auto rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-cloud text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800">Solusi Cloud</h3>
+              <p class="mt-4 text-gray-600">
+                Kami menawarkan layanan berbasis cloud untuk efisiensi dan
+                skalabilitas bisnis Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#0E0E0E] py-12 text-white">
+      <div class="container mx-auto text-center">
+        <div class="space-x-6 mb-4">
+          <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Dark/Light mode toggle
+      const themeToggle = document.getElementById("themeToggle");
+      const body = document.body;
+
+      // Cek mode yang digunakan sebelumnya dari localStorage
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("bg-[#0E0E0E]");
+        body.classList.add("text-white");
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        body.classList.remove("bg-[#0E0E0E]");
+        body.classList.remove("text-white");
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+
+      // Toggle Theme Mode
+      themeToggle.addEventListener("click", () => {
+        if (body.classList.contains("bg-[#0E0E0E]")) {
+          body.classList.remove("bg-[#0E0E0E]");
+          body.classList.remove("text-white");
+          localStorage.setItem("theme", "light");
+          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          body.classList.add("bg-[#0E0E0E]");
+          body.classList.add("text-white");
+          localStorage.setItem("theme", "dark");
+          themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+      });
+    </script>
+  </body>
+</html>
